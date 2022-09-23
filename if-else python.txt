@@ -9,7 +9,7 @@ if n%2 != 0:                             #checking for odd number.
 elif n%2 == 0 and n in range(2,5):       #in range keyword is used to signify the range of numbers.
     print("Not Weird")
 
-elif n%2 == 0 and n in range(6,20):
+elif n%2 == 0 and n in range(6,21):
     print("Weird")
     
 elif n%2 == 0 and n>20:
