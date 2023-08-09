@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+    N = int(input())
+    list=[]
+    i=1
+    while i<=N:
+        s=input().strip().split(" ")
+        if s[0]=="insert":
+            list.insert(int(s[1]), int(s[2]))
+        elif s[0] == 'append':
+            list.append(int(s[1]))
+        elif s[0] == 'sort' and list:
+            list.sort()
+        elif s[0] == 'remove' and list:
+            list.remove(int(s[1]))
+        elif s[0] == 'reverse' and list:
+            list.reverse()
+        elif s[0] == 'pop' and list:
+            list.pop()
+        elif s[0] =="print":
+            print(list)
+        else:
+            pass
+        i+=1
