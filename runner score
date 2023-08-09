@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    x=list(arr)
+    max_score=max(x)
+    max_second=-2486
+    
+    for i in x:
+        if i!=max_score:
+            max_second=max(max_second,i)
+    print(max_second)
