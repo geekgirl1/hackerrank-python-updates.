@@ -1,0 +1,7 @@
+sizeM = int(input())
+m = set(map(int,input().split()))
+sizeN = int(input()) 
+n = set (map(int,input().split()))
+
+for i in sorted(m.difference(n).union(n.difference(m))): 
+    print(i)
