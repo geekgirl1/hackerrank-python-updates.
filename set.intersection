@@ -1,0 +1,6 @@
+first = int(input())
+a = set(map(int,input().split()))
+second = int(input())
+b = set(map(int,input().split()))
+k = set(a.intersection(b))
+print(len(k))
