@@ -1,1 +1,6 @@
-
+first = int(input())
+a = set(map(int,input().split()))
+second = int(input())
+b = set(map(int,input().split()))
+k = set(a.difference(b))
+print(len(k))
