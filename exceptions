@@ -1,0 +1,11 @@
+def solve(a, b):
+    try:
+        print(int(a) // int(b))
+    except Exception as e:
+        print('Error Code: ' + str(e))
+
+
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        s = input().split()
+        solve(s[0], s[1])
