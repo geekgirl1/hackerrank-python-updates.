@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    records = []
+    score_list = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        records.append([name, score])
+        if score not in score_list:
+            score_list.append(score)
+    name_list = []
+    for item in records:
+        if item[1] == sorted(score_list)[1]:
+            name_list.append(item[0])
+    for names in sorted(name_list):
+        print(names)
